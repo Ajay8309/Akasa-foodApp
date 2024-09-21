@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin to ensure full height */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    padding: 1rem;
+    flex: 1; /* Allow main content to grow and take remaining height */
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #fde8e8;
+    color: #e90000;
+    height: 30vh;
+    padding: 1rem;
+    margin-top:40px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    background-color: #eee;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1rem;
+  }
+  
+  /* Spinner styles */
+  .spinner-container {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    /* border: 2px solid red; */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Custom styles for your layout */
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  

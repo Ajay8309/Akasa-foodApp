@@ -1,0 +1,410 @@
+.MainContiner{
+    border: 2px solid red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.containerNav{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inn {
+    /* border: 2px solid red; */
+    margin-top: 22px;
+}
+
+.rightContainer {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.loginContainer {
+    border: .1px solid rgb(152, 157, 168);
+    height: 90vh;
+    width: 30vw;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* border-radius: 20px; */
+   /* box-shadow: -3px 4px 2px 2px black; */
+}
+
+
+.gbtn {
+    display: flex;
+}
+
+.upperSection {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+}
+
+.tagline {
+    /* width: 10px; */
+    /* border: 2px solid red; */
+}
+
+.upperSection h2 {
+    text-decoration: none;
+    color: rgb(233, 34, 8);
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+
+
+.placeholder.clicked {
+    position: relative;
+    width: 100px;
+    background-color: white;
+    top: -17px;
+    left: 8px;
+    
+}
+
+.placeholder {
+    position: relative;
+    width: 100px;
+    background-color: white;
+    top: 10px;
+    left: 8px;
+    transition: all 0.3s ease;
+}
+
+.in {
+    width: 26.29vw;
+    height: 12vh;
+    /* border: 2px solid red; */
+    margin-bottom: -10px;
+    color: black;
+    
+}
+
+.showMe {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.showMeAndForgot {
+    display: flex;
+    width: 26vw;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.forgot {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.mailIcon {
+    position: relative;
+    width: 30px;
+    top: 32px;
+    /* left: 350px; */
+    margin-left: 24vw;
+    /* border: 2px solid red; */
+}
+
+.intag {
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    width: 26.29vw;
+    height: 6.97vh;
+    margin-top: -28px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.lb {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.googleImg {
+    height: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.btn1 {
+    width: 26.29vw;
+    height: 6vh;
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde8e8;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn2 {
+    width: 26.29vw;
+    height: 6vh;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.leftImage {
+    max-height: 50vh;
+    max-width: 50vw;
+    display: none;
+}
+
+.signupEnd {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    /* border: 2px solid red; */
+}
+
+.signLink {
+    text-decoration: none;
+    color: blue;
+}
+
+.title{
+     /* border: 2px solid red; */
+     width: 20vw;
+     margin-bottom: 1rem;
+     font-size: 39px;
+}
+
+
+.leftContainer {
+    background-color:#fde8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.imgWrapper {
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 80vh;
+    width: 45vw;
+    background-color: antiquewhite;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+    .leftSlider, .rightSlider {
+        display: none;
+    }
+
+
+
+@media screen and (max-width: 1385px) and (min-width: 1000px) {
+   
+    .signupEnd {
+        width: 25vw;
+    }
+
+    .tagline {
+        width: 25vw;
+    }
+
+    
+    .leftContainer {
+     color: black;
+    }
+ 
+}
+
+
+
+@media screen and (max-width: 1120px)  {
+
+    .rightSlider {
+        position: relative;
+        /* margin-left: 91%; */
+        top: 130px;
+        display: block;
+        border: 2px solid red;
+    }
+
+    .leftSlider {
+        position: relative;
+        /* margin-right: 91%; */
+        top: 130px;
+        display: block;
+        /* border: 2px solid red; */
+   
+}
+
+    .mailIcon {
+        position: relative;
+        width: 30px;
+        top: 32px;
+        margin-left: 48vw;
+    }
+
+    .loginContainer {
+        border: 2px solid rgb(152, 157, 168);
+        height: 90vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 20px; */
+        /* box-shadow: -3px 4px 2px 2px black; */
+    }
+
+    .in {
+        width: 58vw;
+        height: 12vh;
+        /* border: 2px solid red; */
+        /* margin-bottom: -10px; */
+        /* color: black; */
+    }
+    .rightContainer{
+       /* background-color: red; */
+       /* border: 2px solid red; */
+   }
+
+
+   .leftContainer {
+    height: 100vh;
+    width: 100vw;
+    transition: margin-right 0.3s ease-in-out;
+}
+
+.rightContainer {
+    height: 100vh;
+    width: 100vw;
+    /* margin-right: -100%; */
+    transition: margin-right 0.3s ease-in-out;
+  }
+  
+ 
+
+   .intag {
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    width: 58vw;
+    height: 6.97vh;
+    margin-top: -28px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.btn1 {
+    width: 58vw;
+    height: 5vh;
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde8e8;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.forgot {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    /* width: 29vw; */
+    color: blue;
+    /* border: 2px solid palevioletred; */
+}
+
+.showMeAndForgot {
+    display: flex;
+    width: 58vw;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.signupEnd {
+    width: 58vw;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 70px; */
+    /* margin-bottom: -7px; */
+    /* border: 2px solid red; */
+    font-size: 14px;
+}
+
+.tagline {
+    width: 85vw;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2 {
+    width: 58vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 15px;
+}
+}
+
+
+
+
+
