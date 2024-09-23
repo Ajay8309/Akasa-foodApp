@@ -8,7 +8,7 @@ const Layout = ({ children, title, loading }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || "Home"} | Shringar </title>
+        <title>{title || "Home"} | TASTEBUD </title>
         <meta
           name="description"
           content="E-commerce store built with React, Node, Express and Postgres"
@@ -64,7 +64,7 @@ const Layout = ({ children, title, loading }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              @Shringar
+              @TASTEBUD
             </a>
           </p>
         </footer>

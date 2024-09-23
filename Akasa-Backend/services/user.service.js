@@ -1,12 +1,12 @@
 const {
     createUserDb, 
-    // getUserByEmailDb, 
+    getUserByEmailDb, 
     getUserByIdDb, 
-    // getUserByUsernameDb, 
+    getUserByUsernameDb, 
     getAllUsersDb, 
     // deleteUserDb, 
     // changeUserPasswordDb, 
-    // updateUserDb,
+    updateUserDb,
 } = require("../db/user.db");
 
 const {ErrorHandler} = require("../helpers/error");
@@ -37,7 +37,7 @@ class UserService {
     updateUser = async (user) => {
         const {email, username, id} = user;
         const errors = {};
-
+    
         try {
             const getUser = await getUserByIdDb(id);
             const findUserByEmail = await getUserByEmailDb(email);
@@ -47,24 +47,26 @@ class UserService {
             
               const usernameChanged = 
               username && getUser.username.toLowerCase() !== username.toLowerCase();  
-
+    
               if(emailChanged && typeof findUserByEmail === "object") {
                 errors["email"] = "Email is already taken";
               }
-
+    
               if(usernameChanged && typeof findUserByUsername === "object"){
-                errors["username"] = "username already taken";
+                errors["username"] = "Username is already taken";
               }
-
+    
               if(Object.keys(errors).length > 0) {
                 throw new ErrorHandler(403, errors);
               }
-
-              return updateUserDb(user);
+    
+              return await updateUserDb(user);
         } catch (error) {
-            
+            console.error("Service updateUser error:", error);
+            throw new ErrorHandler(500, "Service error occurred");
         }
     }
+    
    
 }
 

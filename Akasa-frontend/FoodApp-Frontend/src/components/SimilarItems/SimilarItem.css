@@ -1,0 +1,60 @@
+.itemContainer {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    max-width: 250px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.itemContainer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.itemLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.productImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 15px;
+    text-align: center;
+}
+
+.productName {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
+    height: 40px; /* Limit description height */
+    overflow: hidden; /* Hide overflow text */
+}

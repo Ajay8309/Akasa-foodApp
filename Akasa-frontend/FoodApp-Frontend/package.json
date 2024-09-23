@@ -10,12 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@react-oauth/google": "^0.12.1",
     "react": "^18.3.1",
+    "react-content-loader": "^7.0.2",
     "react-dom": "^18.3.1",
+    "react-feather": "^2.0.10",
     "react-helmet-async": "^2.0.5",
     "react-hot-toast": "^2.4.1",
-    "react-router-dom": "^6.26.2"
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^6.26.2",
+    "react-slick": "^0.30.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -6,6 +6,10 @@ CREATE TABLE public.users
     fullname VARCHAR(100) NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
     roles VARCHAR(10)[] DEFAULT '{customer}'::VARCHAR[] NOT NULL,
+    address VARCHAR(200),
+    city VARCHAR(100),
+    state VARCHAR(100),
+    country VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 

@@ -32,8 +32,9 @@ const getUserById = async (req, res) => {
 const updateUser = async (req, res) => {
     const {username, email, fullname, address, city, state, country} = req.body;
     // if(+req.params.id === req.user.id || req.user.roles.includes("admin")) {
-        const user = await userService.getUserById(req.user.id);
-        console.log(user)
+        const id = req.params.id;
+        const user = await userService.getUserById(id);
+        // console.log(user)
         try {
             const results = await userService.updateUser({
                 username: username || user.username, 
@@ -43,7 +44,7 @@ const updateUser = async (req, res) => {
                 city, 
                 state, 
                 country, 
-                id : req.params.idxx
+                id : req.params.id
             });
             return res.status(201).json(results);
         } catch (error) {

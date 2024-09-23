@@ -71,16 +71,23 @@ const updateUserDb = async ({
     state,
     country,
 }) => {
-    const { rows: user } = await pool.query(
-        `UPDATE users 
-         SET username = $1, email = $2, fullname = $3, address = $4, 
-             city = $5, state = $6, country = $7 
-         WHERE user_id = $8 
-         RETURNING username, email, fullname, address, city, state, country`,
-        [username, email, fullname, address, city, state, country, id]
-    );
-    return user[0];
+    try {
+        const { rows: user } = await pool.query(
+            `UPDATE users 
+             SET username = $1, email = $2, fullname = $3, address = $4, 
+                 city = $5, state = $6, country = $7 
+             WHERE user_id = $8 
+             RETURNING username, email, fullname, address, city, state, country`,
+            [username, email, fullname, address, city, state, country, id]
+        );
+        console.log("Update successful, returned data:", user[0]);
+        return user[0];
+    } catch (error) {
+        console.error("Database update error:", error);
+        throw new ErrorHandler(500, "Database update failed");
+    }
 };
+
 
 // Delete user from the database
 const deleteUserDb = async (id) => {

@@ -1,0 +1,231 @@
+.productDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .productInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .productDetailsImage img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .productDetailsInfo {
+    flex: 1;
+    margin-left: 30px;
+  }
+  
+  .titleName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nameStarComponent h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .wishlistStarContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wishlistIcon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff6f61;
+  }
+  
+  .underlineName {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ff6f61;
+    margin: 10px 0;
+  }
+  
+  .productPrice {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .priceSpan {
+    color: #ff6f61;
+  }
+  
+  .taxContent {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .productButtons {
+    margin-top: 20px;
+  }
+  
+  .productButtons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .productButtons button:hover {
+    background-color: #ff5048;
+  }
+  
+  .hr {
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .txt1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .txtSpan {
+    font-weight: 500;
+  }
+  
+  .hr2 {
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+  }
+  
+  .AddreviewContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .stars {
+    margin-top: -10px;
+  }
+  
+  .addReviewButton {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .addReviewButton:hover {
+    background-color: #ff5048;
+  }
+  
+  .reviewForm {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .reviewForm.show {
+    display: flex;
+  }
+  
+  .reviewForm textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .reviewForm button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reviewForm button:hover {
+    background-color: #ff5048;
+  }
+  
+  /* Fixed Product Details */
+  .fixedProductDetails {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fixedProductDetails .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fixedProductDetails button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fixedProductDetails button:hover {
+    background-color: #ff5048;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .productInfoContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .productDetailsInfo {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .productDetailsImage img {
+      max-width: 100%;
+    }
+  
+    .productButtons button {
+      width: 100%;
+    }
+  }
+  

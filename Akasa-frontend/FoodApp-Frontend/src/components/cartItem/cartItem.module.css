@@ -1,0 +1,73 @@
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagetxtContainer {
+  display: flex;
+  align-items: center;
+}
+
+.productImage {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.productDetails {
+  flex-grow: 1;
+}
+
+.productName {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.productPrice {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.quantityButtons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.decrementButton,
+.incrementButton {
+  width: 30px; /* Adjust size as needed */
+  padding: 0;
+  font-size: 20px;
+}
+
+.cardItemButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.removeButton {
+  margin-bottom: 5px;
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.removeButton:hover {
+  background-color: #ff1a1a;
+}

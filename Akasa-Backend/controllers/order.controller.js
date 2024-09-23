@@ -11,22 +11,28 @@ const getAll = async (req, res) => {
 }
 
 const createOrder = async (req, res) => {
-    const {amount, itemTotal, paymentMethod, ref} = req.body;
+    const { amount, itemTotal, paymentMethod, tracking_id } = req.body;  
     const user_id = req.user.id;
     const cartId = req.user.cart_id;
 
-    const newOrder = await orderService.createOrder({
-        cartId, 
-        amount, 
-        itemTotal, 
-        user_id,
-        paymentMethod, 
-        ref,
-    });
+    try {
+        const newOrder = await orderService.createOrder({
+            cartId, 
+            amount, 
+            itemTotal, 
+            user_id,
+            paymentMethod, 
+            tracking_id,  
+        });
 
-    await cartService.emptyCart(cartId);
-    res.status(201).json(newOrder);
+        await cartService.emptyCart(cartId);
+        res.status(201).json(newOrder);
+    } catch (error) {
+        console.error('Error creating order:', error);
+        res.status(500).json({ error: error.message });
+    }
 };
+
 
 const getOrder = async (req, res) => {
     console.log("Get specific order by ID");

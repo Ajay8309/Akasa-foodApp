@@ -1,0 +1,129 @@
+.cartTitle {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+
+/* Add this CSS to your stylesheets */
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  /* max-width: 347px; */
+  /* flex-direction: column; */
+  }
+  
+  .checkoutButton {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+  }
+  .product-image {
+    width: 155px;
+    height: 189px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .TotalDetails {
+    border: 2px solid grey;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 110px;
+    justify-content: center;
+  }
+
+  .imagetxtContainer {
+    display: flex;
+    width: 23vw;
+  }
+
+  .CardItemButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 16vw;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+  }
+  
+  .quantity-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+  }
+  
+  .increment-button,
+  .decrement-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    background-color: #ff4d4f;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+
+  .container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cartItemCardWithScrollbar {
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #070707 #f0f0f0; 
+  }
+  
+  .cartItemCardWithScrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .cartItemCardWithScrollbar::-webkit-scrollbar-thumb {
+    background-color:  #fde8e8;
+  }
+
+  

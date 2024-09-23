@@ -1,0 +1,71 @@
+/* profile.module.css */
+
+.profileContainer {
+  display: grid;
+  place-items: center;
+  padding-top: 4rem;
+}
+
+.profileCard {
+  width: 100%;
+  max-width: 32rem; /* Adjust based on your design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.profileHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profileTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.profileSubtitle {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.profileContent {
+  padding: 1.5rem;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profileRow dt {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2d3748;
+  width: 40%; /* Adjust width as necessary */
+}
+
+.profileRow dd {
+  font-size: 0.875rem;
+  color: #4a5568;
+  width: 60%; /* Adjust width as necessary */
+}
+
+.profileEdit {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profileEdit Button {
+  width: 100%;
+}
