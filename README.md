@@ -18,6 +18,8 @@ https://github.com/user-attachments/assets/f57bccdd-5af5-4936-ba48-e62166322135
 - **Order History & Tracking:** Users can view their past orders, track the status, and reorder with ease.
 - **Wishlist:** Save food items for future purchases.
 - **Reviews:** Customers can leave reviews and ratings on food items and view feedback from others.
+- **Payment Gateway:** Integrated payment gateway using Razorpay's test API.
+
 
 ## 📦 Installation Guide
 
